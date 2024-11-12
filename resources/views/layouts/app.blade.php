@@ -27,9 +27,67 @@
         <aside class="main-sidebar">
             <section class="sidebar">
                 <!-- Sidebar user panel -->
-                <!-- Sidebar menu -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="{{ asset('adminlte/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Nombre Usuario</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> En línea</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">NAVEGACIÓN PRINCIPAL</li>
+
+                    <!-- Dashboard -->
+                    <li class="active">
+                        <a href="{{ route('dashboard') }}">
+                            <i class="fa fa-tachometer-alt"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Ejemplo de Menú con Submenú -->
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cogs"></i> <span>Configuración</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
+                            <li><a href="#"><i class="fa fa-lock"></i> Seguridad</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Otros enlaces de menú -->
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope"></i> <span>Mensajes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i> <span>Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-file"></i> <span>Documentos</span>
+                        </a>
+                    </li>
+
+                    <!-- Menú con un enlace adicional -->
+                    <li class="header">OTROS</li>
+                    <li><a href="#"><i class="fa fa-info-circle"></i> <span>Acerca de</span></a></li>
+                </ul>
+                <!-- /.sidebar-menu -->
             </section>
+            <!-- /.sidebar -->
         </aside>
+
 
         <!-- Content Wrapper -->
         <div class="content-wrapper">
